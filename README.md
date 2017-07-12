@@ -1,1 +1,1 @@
-# teze
+# Thesis Statement

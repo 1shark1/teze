@@ -1,0 +1,173 @@
+
+\documentclass[FM,noheader,EN]{tulthesis}
+
+% Thesis Statement
+% Lukas Mateju
+% ITE, FM TUL
+
+% use XeLateX to compile
+
+\newcommand{\verze}{1.4}
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{multirow}
+\hypersetup{colorlinks=true, linkcolor=tulFM, urlcolor=tulFM, citecolor=tulFM}
+\sloppy
+
+\addto\captionsenglish{%
+  \renewcommand{\bibname}{References}%
+}
+
+\TULtitle{Název tezí disertační práce}{Name of Thesis Statement}
+\TULprogramme{P2612}{Elektrotechnika a informatika}{Electrical Engineering and Informatics}
+\TULbranch{2612V045}{Technická kybernetika}{Technical Cybernetics}
+\TULauthor{Ing. Lukáš Matějů}
+\TULsupervisor{Ing. Petr Červa, Ph.D.}
+\TULyear{2017}
+\TULthesisType{Teze disertační práce}{Thesis Statement}
+
+\bibliographystyle{references} 
+\titlespacing*{\chapter}{0pt}{-\topskip}{*4}
+
+\begin{document}
+
+\ThesisTitle{EN}
+% \ThesisTitle{CZ}
+\TULfooternopage
+\nofootaddress
+
+
+% poděkování
+%\begin{acknowledgement}[wide]
+%I'd like to thank myself etc. ...
+%\end{acknowledgement}
+%\clearpage
+
+
+% abstrakty
+\begin{abstractEN}[wide]
+Abstract in English...
+
+\vspace{0.5cm}
+\noindent\textbf{Keywords:}
+A, B, C, D, E
+\end{abstractEN}
+
+%\vspace{2cm}
+\clearpage
+
+\begin{abstractCZ}[wide]
+Český abstrakt, protože proč by ne...
+
+\vspace{0.5cm}
+\noindent\textbf{Klíčová slova:}
+A, B, C, D, E
+\end{abstractCZ}
+\clearpage
+
+
+% obsah
+\TULfooter
+\tableofcontents
+\clearpage
+%\listoffigures
+%\listoftables
+
+
+% seznam zkratek
+\begin{abbrList}
+\textbf{TUL} & Technical University of Liberec \\
+\end{abbrList}
+
+
+% úvod
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+
+% tělo
+\chapter{Random Test Chapter}
+This is a simple equation for a real-life threatening question: 
+\begin{equation}
+\label{eq_dp}
+	DP = \frac{D}{P} \enspace,
+\end{equation}
+where $D$ is Dany and $P$ is ...
+
+Test reference: \cite{SIGMAP16}
+
+
+% závěr
+\chapter{Conclusions}
+Hello darkness, my old friend.
+
+
+% reference
+\bibliography{references}
+\addcontentsline{toc}{chapter}{References}
+
+
+% seznam publikací
+\newpage
+\chapter*{Author's Publications}
+\addcontentsline{toc}{chapter}{Author's Publications}
+% PŘIDAT - doplnit stránky u TSD, doplnit stránky u SPRINGER (jestli vyjde?)
+	
+	\textbf{2017:}
+	\begin{enumerate}[leftmargin=*]
+		\bibitem{SPRINGER2017}
+		L. Mateju, P. Cerva, and J. Zdansky, “Investigation into the Use of WFSTs and DNNs for 
+		Speech Activity Detection in Broadcast Data Transcription,” in \textit{E-Business and
+		Telecommunications - 13th International Joint Conference, ICETE 2016, Lisbon,
+		Portugal, July 26-28, 2016, Revised Selected Papers}, pp. 1–18, 2017.
+	
+		\bibitem{TSD2017}
+		R. Safarik and L. Mateju, “The Impact of Inaccurate Phonetic Annotations 
+		on Speech Recognition Performance,” in \textit{Text, Speech, and Dialogue - 20th 
+		International Conference, TSD 2017, Prague, Czech Republic, August 27-31, 2017, 
+		Proceedings}, pp. 1–8, 2017.
+	
+		\bibitem{ICASSP2017}
+		L. Mateju, P. Cerva, J. Zdansky, and J. Malek, “Speech Activity Detection in 
+		Online Broadcast Transcription Using Deep Neural Networks and Weighted Finite
+		State Transducers,” in \textit{2017 IEEE International Conference on Acoustics, Speech 
+		and Signal Processing, ICASSP 2017, New Orleans, LA, USA, March 5-9, 2017}, 
+		pp. 5460–5464, 2017.
+	\end{enumerate}
+	
+	\noindent \textbf{2016:}
+	\begin{enumerate}[leftmargin=*,resume]
+		\bibitem{TSD2016}
+		M. Bohac, L. Mateju, M. Rott, and R. Safarik, “Automatic Syllabification and 
+		Syllable Timing of Automatically Recognized Speech - for Czech,” in \textit{Text, Speech, 
+		and Dialogue - 19th International Conference, TSD 2016, Brno, Czech Republic, 
+		September 12-16, 2016, Proceedings}, pp. 540–547, 2016.
+	
+		\bibitem{SIGMAP2016}
+		L. Mateju, P. Cerva, and J. Zdansky, “Study on the Use of Deep Neural Networks 
+		for Speech Activity Detection in Broadcast Recordings,” in \textit{Proceedings of the 13th 
+		International Joint Conference on e-Business and Telecommunications (ICETE 
+		2016) - Volume 5: SIGMAP, Lisbon, Portugal, July 26-28, 2016}, pp. 45–51, 
+		2016.
+		
+		\bibitem{TSP2016}
+		R. Safarik and L. Mateju, “Impact of Phonetic Annotation Precision on Automatic 
+		Speech Recognition Systems,” in \textit{39th International Conference on 
+		Telecommunications and Signal Processing, TSP 2016, Vienna, Austria, June 27-29, 2016}, 
+		pp. 311–314, 2016.
+	\end{enumerate}
+	
+	\noindent \textbf{2015:}
+	\begin{enumerate}[leftmargin=*,resume]
+		\bibitem{ECMSM2015}
+		L. Mateju, P. Cerva, and J. Zdansky, “Investigation into the Use of Deep Neural 
+		Networks for LVCSR of Czech,” in \textit{2015 IEEE International Workshop of Electronics, 
+		Control, Measurement, Signals and their Application to Mechatronics, ECMSM, 
+		2015, Liberec, Czech Republic, June 22-24, 2015}, pp. 184–187, 2015.
+	\end{enumerate}
+\end{document}
