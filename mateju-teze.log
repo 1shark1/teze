@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.7.10)  12 JUL 2017 14:28
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.7.10)  13 JUL 2017 16:27
 entering extended mode
 **D:/Prezentace/teze/mateju-teze.tex
 (D:/Prezentace/teze/mateju-teze.tex
@@ -915,51 +915,59 @@ File: logo-fm-en.pdf Graphic file (type pdf)
 ] [2
 
 
-] [3
-
-
 ] (mateju-teze.toc)
 \tf@toc=\write4
 \openout4 = `mateju-teze.toc'.
 
- [4
+ [3
+
+
+] [4
 
 
 ] [5
 
 
 ]
-[6
-
-
-]
 Chapter 1.
-[7
+[6
 
 ]
 Chapter 2.
-(mateju-teze.bbl [8
-
-]) [9
+[7
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
- [10
+Chapter 3.
+[8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+Chapter 4.
+[9
+
+]
+Chapter 5.
+(mateju-teze.bbl [10
+
+]) [11
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
+ [12
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
  (mateju-teze.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 173.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 282.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 282.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 282.
  ) 
 Here is how much of TeX's memory you used:
- 23495 strings out of 429666
- 419584 string characters out of 3179549
- 509105 words of memory out of 3000000
- 27202 multiletter control sequences out of 15000+200000
- 533512 words of font info for 50 fonts, out of 3000000 for 9000
+ 23517 strings out of 429666
+ 419921 string characters out of 3179549
+ 509193 words of memory out of 3000000
+ 27223 multiletter control sequences out of 15000+200000
+ 533520 words of font info for 51 fonts, out of 3000000 for 9000
  32 hyphenation exceptions out of 8191
  43i,15n,54p,10457b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on mateju-teze.pdf (10 pages).
+Output written on mateju-teze.pdf (12 pages).

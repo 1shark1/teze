@@ -7,4 +7,18 @@ L.~Mateju, P.~Cerva, and J.~Zdansky, ``Study on the Use of Deep Neural Networks
   Telecommunications {(ICETE} 2016) - Volume 5: SIGMAP, Lisbon, Portugal, July
   26-28, 2016}, pp.~45--51, 2016.
 
+\bibitem{ICASSP17}
+L.~Mateju, P.~Cerva, J.~Zdansky, and J.~Malek, ``Speech Activity Detection in
+  online broadcast transcription using Deep Neural Networks and Weighted Finite
+  State Transducers,'' in {\em 2017 {IEEE} International Conference on
+  Acoustics, Speech and Signal Processing, {ICASSP} 2017, New Orleans, LA, USA,
+  March 5-9, 2017}, pp.~5460--5464, 2017.
+
+\bibitem{SPRINGER17}
+L.~Mateju, P.~Cerva, and J.~Zdansky, ``Investigation into the Use of WFSTs and
+  DNNs for Speech Activity Detection in Broadcast Data Transcription,'' in {\em
+  E-Business and Telecommunications - 13th International Joint Conference,
+  {ICETE} 2016, Lisbon, Portugal, July 26-28, 2016, Revised Selected Papers},
+  pp.~1--18, 2017.
+
 \end{thebibliography}
