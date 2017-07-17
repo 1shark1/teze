@@ -99,114 +99,143 @@ A, B, C, D, E
 
 
 % úvod
-\chapter*{Introduction}
+\chapter*{Introduction} 
+\label{ch:introduction}
 \addcontentsline{toc}{chapter}{Introduction}
-Úvodní kapitola seznamující s obsahem tématu.
+
+Úvodní odstavce seznamující s tématem, motivací práce, proč a k čemu je to dobré, rozebrání jednotlivých úloh (jejich použití, smysl):
 \begin{itemize}
 	\item preprocessing řeči,
 	\item detekce řeči/neřeči,
 	\item detekce jazyka,
-	\item změna mluvčího
-	\item id mluvčího
-	\item další segmentační úlohy, emoce
-	\item -> rozpoznávání řeči s využitím získaných informací
+	\item změna a id mluvčího,
+	\item další segmentační úlohy, třeba emoce,
+\end{itemize}	
+Rozpoznávání řeči s využitím získaných znalostí. Online vs. offline zpracování.
+
+.
+
+Odstavce věnující se podobným, již existujícím, systémům a nástrojům (i pro dílčí úlohy).
+\begin{itemize}
+	\item na čem jsou založené,
+	\item v čem se liší (klady, zápory),
+	\item proč znovu?
+	\item porovnání,
+	\item LIAM, Alisé, co je dosud na TUL.
 \end{itemize}	
 
-Seznámení s rozvržením práce a současným stavem: 
+.
+
+Odstavce seznamující s rozpracovaností práce a současným stavem:
 \begin{itemize}
-	\item členění práce - jednotlivé kapitoly obsahují následující body
 	\item SAD - hotovo,
 	\item LID - rozpracováno,
 	\item D+SID - další v pořadí,
 	\item případné další úlohy (emoce atd.).
 \end{itemize}	
+Většina práce je dělena na jednotlivé úlohy podle předchozího seznamu.
 
-Podobné systémy:
-\begin{itemize}
-	\item na čem založené,
-	\item v čem se liší,
-	\item proč znovu?
-	\item porovnání.
-	\item LIAM, Alisé
-\end{itemize}	
+.
+
+Odstavec o členění této práce...
 
 
 % tělo
 % rešeršní okénko
 \chapter{An Overview of Field Research}
-Rešerše pro jednotlivé bloky. 
-Od vybraných původních metod po state-of-the-art.
-Otázka... jak podrobně? - podle rozsahu ostatních kapitol?
+\label{ch:theory}
+Kapitola shrnující rešerši pro jednotlivé úlohy od historického pohledu po state-of-the-art.
 
-\section{SAD}
-state-of-the-art může mírně vycházet z úvodů článků, rozšíření
-+ arpa challenges
-\section{LID}
-doba před ivectory, ivectory
-\section{D+SID}
+Otázka: Jak podrobně? 
+- Podle rozsahu ostatních kapitol?
 
+\section{Speech Activity Detection}
+\label{s:theory:sad}
+Možno rozšířit úvody ze SAD publikací (zpracované hlavně state-of-the-art) + ARPA challenge + historie.
 
-\chapter{Evaluation Metrics}
-FER, MR, FAR, HTER, F-value, delta 2/3, RTF, rovnice
+\section{Languag Identification}
+\label{s:theory:lid}
+iVectory, bottleneck příznaky z rozpoznávače.
 
 
 % použité technologie
+\chapter{Employed Technologies}
+\label{ch:technologies}
+Kapitola shrnující hlavní použité technologie
+
+Zmíněné, která technologie použita u které úlohy.
+Zmínění frameworků.
+
+Otázka: Jak podrobně? 
+- Podle rozsahu ostatních kapitol?
+
+\section{Deep Neural Networks}
+\section{Weighted Finite State Transducers}
+\section{iVectors}
+\section{Recognizer}
+
+
+% metriky
+\chapter{Evaluation Metrics}
+\label{ch:metrics}
+FER, MR, FAR, HTER, F-value, delta 2/3, RTF, latency atd. -> rovnice
+
+
+% popis modulů
 \chapter{Proposed Solution}
+\label{ch:solution}
+Kapitola popisující kompletní vývoj řešení pro jednotlivé úlohy.
+
+\section{Speech Activity Detection}
+\label{ch:solution:sad}
+Kapitola vychází z publikovaných článků (SIGMAP, ICASSP, SPRINGER) a sleduje kompletní návrh a vývoj výsledků (od začátku až po finální vyhlazovací modely).
 \begin{itemize}
-	\item představit na čem je založené...
-	\item supervised machine learning, deep learning (torch, gpus), liší podle modulu
-	\item podrobnější představení technologií? viz DNN apod.?
-\end{itemize}
-
-\section{Employed Technologies}
-fbc, DNN, WFST (dekodér) (SAD)
-
-fbc + jak bottleneck příznaky, ivectory a jak kombinovat s DNN (LID)
-
-otázka? ... jak podrobně
-\subsection{Deep Neural Networks}
-\subsection{Weighted Finite State Transducers}
-\subsection{iVectors}
-
-\section{Experimental Setup}
-styl použití technologií, idea, DNN na trénování, WFST vyhlazení atd.
-
-základní nastavení, torch, náš rozpoznávač atd.
-
-
-% návrh modulů
-\chapter{Development of the Proposed Solution}
-vývoj jednotlivých bloků, hlavní část tvoří SAD, zbytek LID.
-
-\section{SAD}
-\begin{itemize}
-	\item vychází z publikovaných článků. SIGMAP, ICASSP a SPRINGER,
-	\item od začátku návrhu až po finální modely WFST. Vyhodnocení na QUT-NOISE-TIMIT, rozšířené testy ze springeru,
+	\item QUT-NOISE-TIMIT výsledky
+	\item rozšířené výsledky ze SPRINGERu
 	\item vliv SADu na rozpoznávač, 
-	\item +/- vše publikované + pár dílčích věcí, co se nepoužilo.
-	\item zdůraznění výsledků + že se používá na tul
+	\item + pár dílčích výsledků, co se nepoužilo.
 \end{itemize}	
 
+Zdůraznění výsledků a finálního nasazení do provozu. Online.
+
+Sekce tvoří hlavní část kapitoly.
+
+Možnost vykradení publikovaných článků?
+
+Otázka: Jak moc?
+
+\section{Language Identification}
+\label{ch:solution:lid}
+Sekce obsahuje popis prvotních postupů a výsledků pro LID:
 \section{LID}
 \begin{itemize}
-	\item bez ivectorů, fbc přínaky, bottleneck příznaky,
+	\item bez ivectorů, fbc příznaky, 
+	\item bottleneck příznaky,
 	\item ivectory úvod,
-	\item (zatím nepublikováno)
 \end{itemize}	
 
-Možno 'vykrást' publikované články.
+Zatím nic nepublikováno. Pravděpodobně příští rok.
+
+
+% shrnutí a diskuze výsledků
+\chapter{Comparison of Results}
+\label{ch:comparison}
+Kapitola shrnující dosažené výsledky. Vypíchnutí nejlepších atd. Porovnání.
 
 
 % závěr
 \chapter{Conclusions}
-Závěrečná kapitola shrnující celkový stav práce:
+Odstavce shrnující stav práce a zhodnocení dosažených výsledků:
 \begin{itemize}
 	\item SAD (hotovo) + zhodnocení výsledků \cite{SIGMAP16} \cite{ICASSP17} \cite{SPRINGER17}, 
 	\item LID (rozpracováno) + zhodnocení dosavadních výsledků + co dál,
-	\item D+SID (bude) + co dál,
+	\item D+SID (bude),
 	\item případné další úlohy.
 \end{itemize}	
-Případné další směrování práce.
+
+.
+
+Odstavce o dalším směřování práce.
 
 %This is a simple equation for a real-life threatening question: 
 %\begin{equation}
