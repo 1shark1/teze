@@ -335,4 +335,3 @@ with its electronic form as saved at the IS STAG portal.
 
 \titleformat{\chapter}%
 {\normalfont\sffamily\LARGE\bfseries\color{\titlecolor}}{\thechapter}{1em}{}
-
